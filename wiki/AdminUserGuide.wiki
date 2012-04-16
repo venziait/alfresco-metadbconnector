@@ -19,7 +19,7 @@ _Prerequisites :_
 *_Deploy Steps :_*<br><br>
 *1*.Stop Alfresco Server.<br><br>
 _#Alfresco amp module installation_<br>
-*2*.Copy mdbc-1.0-SNAPSHOT.amp file to $ALF_ROOT/amps<br>
+*2*.Copy [http://alfresco-metadbconnector.googlecode.com/files/mdbc-1.0-SNAPSHOT.amp mdbc-1.0-SNAPSHOT.amp] file to $ALF_ROOT/amps<br>
 *3*.Remove directories :<br>
 -$ALF_ROOT/tomcat/webapps/alfresco<br>
 -$ALF_ROOT/tomcat/work/Catalina/localhost/alfresco<br>
@@ -29,7 +29,7 @@ cd $ALF_ROOT<br>
 sudo java -jar bin/alfresco-mmt.jar install amps/mdbc-1.0-SNAPSHOT.amp tomcat/webapps/alfresco.war<br>
 (note we use sudo because the installation path is /opt/alfresco-4.0.d and the command is launched for a non-root user)<br><br>
 _#Alfresco Share jar file_<br>
-*5*.Copy share-mdbc-component-0.1.jar to $ALF_ROOT/tomcat/webapps/share/WEB-INF/lib<br>
+*5*.Copy [http://alfresco-metadbconnector.googlecode.com/files/share-mdbc-component-0.1.jar share-mdbc-component-0.1.jar] to $ALF_ROOT/tomcat/webapps/share/WEB-INF/lib<br>
 *6*.Start the Server.<br><br>
 
 = Configuration and Extension =
