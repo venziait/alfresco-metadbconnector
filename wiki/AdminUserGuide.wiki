@@ -32,10 +32,12 @@ _Prerequisites :_
 -$ALF_ROOT/tomcat/work/Catalina/localhost/share
 
 
-4.Install the amp in alfresco war file with de command :
+4.Install the amp in alfresco war file with the command :
 
-{{{cd $ALF_ROOT
-sudo java -jar bin/alfresco-mmt.jar install amps/mdbc-2.0-SNAPSHOT.amp tomcat/webapps/alfresco.war}}} 
+cd $ALF_ROOT
+
+sudo java -jar bin/alfresco-mmt.jar install amps/mdbc-2.0-SNAPSHOT.amp tomcat/webapps/alfresco.war
+
 (note we use sudo because the installation path is /opt/alfresco-4.0.d and the command is launched for a non-root user)
 
 #Alfresco Share jar file
