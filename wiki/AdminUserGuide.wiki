@@ -40,7 +40,7 @@ By default there are two connectors defined in AMP module :<br>
 -$ALF_ROOT/tomcat/webapps/alfresco/WEB-INF/classes/alfresco/module/mdbc/connectors/*country-connector.xml*<br>
 These connectors are configured for query a MySQL public database called "[http://dev.mysql.com/doc/sakila/en/sakila.html SakilaDB]".<br>
 To install the Sakila sample database go to [http://dev.mysql.com/doc/sakila/en/sakila.html#sakila-installation Installation] instructions (Win based) or use the following commands (Unix based) :<br>
-_You can download a copy of database schema and data from this project download section ([http://alfresco-metadbconnector.googlecode.com/files/sakila-db.zip SakilaDB])_<br>
+_You can download a copy of database schema and data from this project download section ([http://alfresco-metadbconnector.googlecode.com/files/sakila-db.zip SakilaDB file])_<br>
 mysql -u root -p < path/to/sakila-schema.sql<br>
 (Enter root password)<br>
 mysql -u root -p < path/to/sakila-data.sql<br>
