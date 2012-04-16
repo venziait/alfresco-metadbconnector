@@ -4,9 +4,7 @@
 _Tested Server environment :_
 
 -Ubuntu Server 10.10 LTS 64bits
-
 -Java(TM) SE Runtime Environment (build 1.6.0_26-b03)
-
 -*Alfresco Community 4.0.d*
 
 
