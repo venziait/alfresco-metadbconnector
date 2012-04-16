@@ -2,17 +2,15 @@
 = Installation =
 
 _Tested Server environment :_
-
--Ubuntu Server 10.10 LTS 64bits
--Java(TM) SE Runtime Environment (build 1.6.0_26-b03)
--*Alfresco Community 4.0.d*
-
+  *Ubuntu Server 10.10 LTS 64bits.
+  *Java(TM) SE Runtime Environment (build 1.6.0_26-b03).
+  **Alfresco Community 4.0.d*.
 
 _Tested Browsers :_
--Chromium & Google Chrome 18.0.1025.151
--Mozilla Firefox 3.6.6 for Windows & 11.0 for Ubuntu Desktop
--Internet Explorer 8.0.6001.18702
--Opera 11.62
+  *Chromium & Google Chrome 18.0.1025.151
+  *Mozilla Firefox 3.6.6 for Windows & 11.0 for Ubuntu Desktop
+  *Internet Explorer 8.0.6001.18702
+  *Opera 11.62
 
 _Prerequisites :_
 -An Alfresco instance running.
