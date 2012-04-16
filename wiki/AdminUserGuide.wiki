@@ -45,8 +45,8 @@ mysql -u root -p < path/to/sakila-schema.sql<br>
 (Enter root password)<br>
 mysql -u root -p < path/to/sakila-data.sql<br>
 (Enter root password)<br>
-*If there are no errors, the process is completed successfully.<br><br>
-NOTE : For use the MySQL jdbc driver on our MetaDBConnectors, customer or country for example, ensure that mysql-connector-java-5.?.?.jar file already exists in $ALF_ROOT/tomcat/lib folder.<br>
+If there are no errors, the process is completed successfully.<br><br>
+NOTE : For use MySQL jdbc Driver on our MetaDBConnectors, customer or country for example, ensure that mysql-connector-java-5.?.?.jar file already exists in $ALF_ROOT/tomcat/lib folder.<br>
 
 Add your content here.  Format your content with:
   * Text in *bold* or _italic_
