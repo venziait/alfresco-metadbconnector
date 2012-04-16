@@ -34,7 +34,7 @@ _#Alfresco Share jar file_<br>
 
 = Configuration and Extension =
 
-_Sample Default Configuration_<br>
+*_Sample Default Configuration :_*<br>
 By default there are two connectors defined in AMP module :<br>
 -$ALF_ROOT/tomcat/webapps/alfresco/WEB-INF/classes/alfresco/module/mdbc/connectors/*customer-connector.xml*<br>
 -$ALF_ROOT/tomcat/webapps/alfresco/WEB-INF/classes/alfresco/module/mdbc/connectors/*country-connector.xml*<br>
