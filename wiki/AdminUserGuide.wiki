@@ -2,30 +2,34 @@
 = Installation =
 
 _Tested Server environment :_
-  *Ubuntu Server 10.10 LTS 64bits.
-  *Java(TM) SE Runtime Environment (build 1.6.0_26-b03).
-  **Alfresco Community 4.0.d*.
+  * Ubuntu Server 10.10 LTS 64bits.
+  * Java(TM) SE Runtime Environment (build 1.6.0_26-b03).
+  * *Alfresco Community 4.0.d*.
 
 _Tested Browsers :_
-  *Chromium & Google Chrome 18.0.1025.151
-  *Mozilla Firefox 3.6.6 for Windows & 11.0 for Ubuntu Desktop
-  *Internet Explorer 8.0.6001.18702
-  *Opera 11.62
+  * Chromium & Google Chrome 18.0.1025.151
+  * Mozilla Firefox 3.6.6 for Windows & 11.0 for Ubuntu Desktop
+  * Internet Explorer 8.0.6001.18702
+  * Opera 11.62
 
 _Prerequisites :_
--An Alfresco instance running.
+  * An Alfresco instance running.
 
 _Deploy Steps :_
+
 1.Stop Alfresco Server.
+
 #Alfresco amp module installation
 2.Copy mdbc-2.0-SNAPSHOT.amp file to $ALF_ROOT/amps
+
 3.Remove directories :
 -$ALF_ROOT/tomcat/webapps/alfresco
 -$ALF_ROOT/tomcat/work/Catalina/localhost/alfresco
 -$ALF_ROOT/tomcat/work/Catalina/localhost/share
+
 4.Install the amp in alfresco war file with de command :
-`cd $ALF_ROOT
-sudo java -jar bin/alfresco-mmt.jar install amps/mdbc-2.0-SNAPSHOT.amp tomcat/webapps/alfresco.war` (note we use sudo because the installation path is /opt/alfresco-4.0.d and the command is launched for a non-root user)
+{{{cd $ALF_ROOT
+sudo java -jar bin/alfresco-mmt.jar install amps/mdbc-2.0-SNAPSHOT.amp tomcat/webapps/alfresco.war}}} (note we use sudo because the installation path is /opt/alfresco-4.0.d and the command is launched for a non-root user)
 
 = Configuration and Extension =
 
