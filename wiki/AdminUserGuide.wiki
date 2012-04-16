@@ -34,7 +34,7 @@ _#Alfresco Share jar file_<br>
 
 = Configuration and Extension =
 
-*_Sample Default Configuration :_*<br>
+*_Sample Default Configuration_*<br>
 By default there are two connectors defined in AMP module :<br>
 -$ALF_ROOT/tomcat/webapps/alfresco/WEB-INF/classes/alfresco/module/mdbc/connectors/*customer-connector.xml*<br>
 -$ALF_ROOT/tomcat/webapps/alfresco/WEB-INF/classes/alfresco/module/mdbc/connectors/*country-connector.xml*<br>
@@ -46,9 +46,9 @@ mysql -u root -p < path/to/sakila-schema.sql<br>
 mysql -u root -p < path/to/sakila-data.sql<br>
 (Enter root password)<br>
 If there are no errors, the process is completed successfully.<br><br>
-NOTE : For use MySQL jdbc Driver on our MetaDBConnectors, customer or country for example, ensure that mysql-connector-java-5.?.?.jar file already exists in $ALF_ROOT/tomcat/lib folder.<br>
+NOTE : For use MySQL jdbc Driver on our MetaDBConnectors, customer or country for example, ensure that mysql-connector-java-5.?.?.jar file already exists in $ALF_ROOT/tomcat/lib folder.<br><br>
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+*_Extension Procedure_*<br>
+ToDo<br>
+*_Sample Extension Procedure_*<br>
+ToDo<br>
