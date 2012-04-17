@@ -5,7 +5,9 @@ _Tested Server environment :_
   * Ubuntu Server 10.10 LTS 64bits.
   * Java(TM) SE Runtime Environment (build 1.6.0_26-b03).
   * *Alfresco Community 4.0.d*.
-  * MySQL 5.1.61-0ubuntu0.10.10.1 (for Alfresco and sample Connectors)
+  * MySQL 5.1.61-0ubuntu0.10.10.1 (for Alfresco and sample Connectors).
+  * MSSQL Server 2005 (for sample tested Connectors).
+  * PostgreSQL 7 (for sample tested Connectors).
 
 _Tested Browsers :_
   * Chromium & Google Chrome 18.0.1025.151
@@ -14,7 +16,7 @@ _Tested Browsers :_
   * Opera 11.62
 
 _Prerequisites :_
-  * An Alfresco instance running.
+  * An Alfresco instance running and jdbc driver jar file in tomcat/lib folder (if different to MySQL).
 
 *_Deploy Steps :_*<br><br>
 *1*.Stop Alfresco Server.<br><br>
