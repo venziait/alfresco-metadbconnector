@@ -17,6 +17,7 @@ _Tested Browsers :_
 
 _Prerequisites :_
   * An Alfresco instance running and jdbc driver jar file in tomcat/lib folder (if different to MySQL).
+  * Installation of AMP module in alfresco.war, sakilaDB files in local (or accesible) MySQL server and copy of jar file in Share webapp lib folder.
 
 *_Deploy Steps :_*<br><br>
 *1*.Stop Alfresco Server.<br><br>
