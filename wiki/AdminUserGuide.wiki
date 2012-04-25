@@ -52,6 +52,8 @@ If there are no errors, the process is completed successfully.<br><br>
 NOTE : For use MySQL jdbc Driver on our MetaDBConnectors, customer or country for example, ensure that mysql-connector-java-5.?.?.jar file already exists in $ALF_ROOT/tomcat/lib folder.<br><br>
 
 *_Extension Procedure_*<br>
-ToDo<br>
+To carry out the process of generating our own "Connectors" elegantly we recommend downloading the source code, available on the [http://code.google.com/p/alfresco-metadbconnector/source/checkout Tab source code] and adapt it, following the existing "Connectors" examples, to our needs.<br>
+On the other hand you can carry out the configuration of the component content in the original files of the AMP module adapting it to our needs, but what we suggest is to locate any file that can be modified to the folder tomcat/shared/classes/alfresco. This will require defining some configuration files that perform load changes placed in this extension path.<br><br>
+
 *_Sample Extension Procedure_*<br>
-ToDo<br>
+ToDO
