@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<connectors>
+	<connector>
+		<name>countries</name>
+		<title>Countries</title>
+		<description>Countries List</description>
+		<aspect>mdbc:country</aspect>
+		<column-detail>country</column-detail>
+		<driver-class-name>com.mysql.jdbc.Driver</driver-class-name>
+		<url>jdbc:mysql://127.0.0.1:3306/sakila</url>
+		<username>root</username>
+		<password>innova</password>
+		<table>country</table>
+		<where>country like '%{0}%'</where>
+		<columns>
+			<column name="country_id" primary-key="true" label="Code" visible="false" order="1" width="20"/>
+			<column name="country" label="Name" order="2" width="120"/>
+		</columns>
+	</connector>
+</connectors>

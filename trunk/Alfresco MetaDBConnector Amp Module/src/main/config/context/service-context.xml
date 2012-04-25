@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE beans PUBLIC '-//SPRING//DTD BEAN//EN' 'http://www.springframework.org/dtd/spring-beans.dtd'>
+<!--   /*
+ *    Copyright (C) 2012 Venzia, S.L. All rights reserved.
+ *
+ *    This program is free software: you can redistribute it and/or modify
+ *    it under the terms of the GNU General Public License as published by
+ *    the Free Software Foundation, either version 3 of the License, or
+ *    (at your option) any later version.
+ *
+ *    This program is distributed in the hope that it will be useful,
+ *    but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ *    GNU General Public License for more details.
+ *
+ *    You should have received a copy of the GNU General Public License
+ *    along with this program. If not, see <http://www.gnu.org/licenses/>.
+ *    
+ */ -->
+<beans>
+
+	<!-- A simple module component that will be executed once -->
+	<bean id="mdbcComponent" class="org.venzia.mdbc.MDBCComponent" parent="module.baseComponent">
+		<property name="moduleId" value="mdbc" />  <!-- See module.properties -->
+		<property name="name" value="Alfresco MetaBDConnector" />
+		<property name="description" value="Module for link data to content" />
+		<property name="sinceVersion" value="2.0" />
+		<property name="appliesFromVersion" value="2.0" />
+	</bean>
+
+  <!-- expose the service registry proxy to javascript -->
+    <bean id="javascriptServiceRegistry" parent="baseJavaScriptExtension"
+     class="org.venzia.mdbc.scripts.MDBCRegistryProxy">
+        <property name="serviceRegistry" ref="ServiceRegistry"/>
+        <property name="extensionName" value="mdbcServiceRegistry"/>
+       <property name="mdbcService" ref="mdbcService"/>
+    </bean>
+    
+	
+	<bean id="mdbcService" class="org.venzia.mdbc.service.MDBCServiceImpl" init-method="init">
+		 <property name="connectorsDeclare">
+		    <list>
+				<value>alfresco/module/mdbc/connectors/customer-connector.xml</value>
+				<value>alfresco/module/mdbc/connectors/country-connector.xml</value>
+		    </list>
+        	</property>
+	</bean>
+	
+</beans>

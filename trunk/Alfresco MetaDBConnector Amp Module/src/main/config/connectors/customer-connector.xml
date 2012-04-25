@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<connectors>
+	<connector>
+		<name>customers</name>
+		<title>Customers</title>
+		<description>Customers List</description>
+		<aspect>mdbc:customer</aspect>
+		<column-detail>name</column-detail>
+		<driver-class-name>com.mysql.jdbc.Driver</driver-class-name>
+		<url>jdbc:mysql://127.0.0.1:3306/sakila</url>
+		<username>root</username>
+		<password>innova</password>
+		<table>customer_list</table>
+		<where>name like '%{0}%' OR address like '%{0}%' OR country like '%{0}%'</where>
+		<columns>
+			<column name="ID" primary-key="true" label="Code" visible="false" order="1" width="20"/>
+			<column name="name" label="Fullname" order="2" width="80"/>
+			<column name="address" label="Address" order="3" width="80"/>
+			<column name="country" label="Country" order="4" width="40"/>
+		</columns>
+	</connector>
+</connectors>
