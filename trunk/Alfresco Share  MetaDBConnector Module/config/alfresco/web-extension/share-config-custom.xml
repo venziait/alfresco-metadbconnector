@@ -1,0 +1,136 @@
+<alfresco-config>
+ <!-- Document Library config section -->
+   <config evaluator="string-compare" condition="DocumentLibrary">
+     <aspects>
+
+         <!--
+            Aspects that a user can see in UI.
+            Used by Rules, aspects are the listed aspects for rule's "has-aspect" action condition.
+         -->
+         <visible>
+            <aspect name="cm:generalclassifiable" />
+            <aspect name="cm:complianceable" />
+            <aspect name="cm:dublincore" />
+            <aspect name="cm:effectivity" />
+            <aspect name="cm:summarizable" />
+            <aspect name="cm:versionable" />
+            <aspect name="cm:templatable" />
+            <aspect name="cm:emailed" />
+            <aspect name="emailserver:aliasable" />
+            <aspect name="cm:taggable" />
+            <aspect name="app:inlineeditable" />
+            <aspect name="gd:googleEditable" />
+            <aspect name="cm:geographic" />
+            <aspect name="exif:exif" />
+            <aspect name="audio:audio" />
+            <aspect name="cm:indexControl" />
+	    	<aspect name="mdbc:customer" />
+	    	<aspect name="mdbc:country" />
+         </visible>
+
+         <!--
+            Aspects that a user can add in UI.
+            Used by Rules, aspects are the listed aspects for rule's "add-features" action.
+            Same as "visible" if left empty.
+         -->
+         <addable>
+         </addable>
+
+         <!--
+            Aspects that a user can remove in UI.
+            Used by Rules, aspects are the listed aspects for rule's "remove-features" action.
+            Same as "visible" if left empty
+         -->
+         <removeable>
+         </removeable>
+      </aspects>
+   </config>
+
+	<config>
+	   <forms>
+	      <dependencies>
+	         <css src="/components/mdbc-finder/mdbc-finder.css" />
+	         <js src="/components/mdbc-finder/mdbc-finder-min.js" />
+	      </dependencies>
+	   </forms>
+	</config>
+
+<!-- cm:content type (existing nodes) -->
+  <config evaluator="aspect" condition="mdbc:customer">
+      <forms>
+        
+         <form>
+            <field-visibility>
+              <show id="mdbc:customer" for-mode="edit"/>
+            </field-visibility>
+	     <appearance>
+		<set id="customer" appearance="fieldset" label-id="mdbc_venzia.property.mdbc_customer.description" />
+              	<field id="mdbc:customer" set="customer">
+                  <control template="/org/alfresco/components/form/controls/mdbc-control.ftl" >
+			 <control-param name="aspect">mdbc:customer</control-param>
+			 <control-param name="connector">customers</control-param>
+		  </control>
+               </field>
+	     </appearance>
+        </form>
+      </forms>
+   </config> 
+   <!-- cm:content type (existing nodes) -->
+  <config evaluator="aspect" condition="mdbc:country">
+      <forms>
+        
+         <form>
+            <field-visibility>
+              <show id="mdbc:country" for-mode="edit"/>
+            </field-visibility>
+	     <appearance>
+		<set id="country" appearance="fieldset" label-id="mdbc_venzia.property.mdbc_country.description" />
+              	<field id="mdbc:country" set="country">
+                  <control template="/org/alfresco/components/form/controls/mdbc-control.ftl" >
+			 <control-param name="aspect">mdbc:country</control-param>
+			 <control-param name="connector">countries</control-param>
+		  </control>
+               </field>
+	     </appearance>
+        </form>
+	        <!--<dependencies>
+	         <css src="/components/mdbc-finder/mdbc-finder.css" />
+	         <js src="/components/mdbc-finder/mdbc-finder-min.js" />
+	      </dependencies>-->
+      </forms>
+   </config> 
+    <!-- cm:content type (creating nodes) -->
+   <config evaluator="model-type" condition="cm:content">
+      <forms>
+     <!-- Search form -->
+         <form id="search">
+            <field-visibility>
+               <show id="cm:name" />
+               <show id="cm:title" force="true" />
+               <show id="cm:description" force="true" />
+               <show id="mimetype" />
+               <show id="cm:modified" />
+               <show id="cm:modifier" />
+               <show id="mdbc:customer" force="true"/>
+               <show id="mdbc:country" force="true"/>
+            </field-visibility>
+            <appearance>
+               <set id="mdbc" appearance="fieldset" label-id="mdbc_venzia.advsearch.mdbc.description" />
+               <field id="mdbc:customer" set="mdbc" />
+               <field id="mdbc:country" set="mdbc" />
+               <field id="mimetype">
+                  <control template="/org/alfresco/components/form/controls/mimetype.ftl" />
+               </field>
+               <field id="cm:modifier">
+                  <control>
+                     <control-param name="forceEditable">true</control-param>
+                  </control>
+               </field>
+               <field id="cm:modified">
+                  <control template="/org/alfresco/components/form/controls/daterange.ftl" />
+               </field>
+            </appearance>
+         </form>
+      </forms>
+   </config>
+</alfresco-config>
