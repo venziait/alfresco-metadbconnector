@@ -8,6 +8,7 @@ _Tested Server environment :_
   * MySQL 5.1.61-0ubuntu0.10.10.1 (for Alfresco and sample Connectors).
   * MSSQL Server 2005 (for sample tested Connectors).
   * PostgreSQL 7 (for sample tested Connectors).
+  * Oracle Express 11g (for sample tested Connectors).
 
 _Tested Browsers :_
   * Chromium & Google Chrome 18.0.1025.151
