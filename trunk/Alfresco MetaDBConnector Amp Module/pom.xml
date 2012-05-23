@@ -119,21 +119,21 @@
 			<artifactId>alfresco-repository</artifactId>
 			<version>${alfresco.version}</version>
 			<scope>provided</scope>
-			<classifier>community</classifier>
+			<classifier></classifier>
 		</dependency>
 		<dependency>
 			<groupId>org.alfresco</groupId>
 			<artifactId>alfresco-core</artifactId>
 			<version>${alfresco.version}</version>
 			<scope>provided</scope>
-			<classifier>community</classifier>
+			<classifier></classifier>
 		</dependency>
 		<dependency>
 			<groupId>org.alfresco</groupId>
 			<artifactId>alfresco-data-model</artifactId>
 			<version>${alfresco.version}</version>
 			<scope>provided</scope>
-			<classifier>community</classifier>
+			<classifier></classifier>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>
@@ -184,12 +184,12 @@
             <version>1.0</version>
 			 <scope>compile</scope>
         </dependency>
-          <dependency>
+          <!-- <dependency>
             <groupId>quartz</groupId>
             <artifactId>quartz</artifactId>
             <version>1.6.0</version>
             <scope>provided</scope>
-        </dependency>
+        </dependency> -->
          <dependency>
         	<groupId>acegisecurity</groupId>
         	<artifactId>acegi-security</artifactId>
