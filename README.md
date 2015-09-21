@@ -11,7 +11,7 @@ More info about support, quick start and extended services at http://venzia.es/#
 
 
 
-Installation
+#Installation
 
 Tested Server environment :
 
@@ -39,7 +39,7 @@ Deploy Steps :
 
 1.Stop Alfresco Server.
 
-#Alfresco amp module installation
+(Alfresco amp module installation)
 2.Copy mdbc-1.0-SNAPSHOT.amp file to $ALF_ROOT/amps
 3.Remove directories :
 -$ALF_ROOT/tomcat/webapps/alfresco
@@ -50,11 +50,11 @@ cd $ALF_ROOT
 sudo java -jar bin/alfresco-mmt.jar install amps/mdbc-1.0-SNAPSHOT.amp tomcat/webapps/alfresco.war
 (note we use sudo because the installation path is /opt/alfresco-4.0.d and the command is launched for a non-root user)
 
-#Alfresco Share jar file
+(Alfresco Share jar file)
 5.Copy share-mdbc-component-0.1.jar to $ALF_ROOT/tomcat/webapps/share/WEB-INF/lib
 6.Start the Server.
 
-Configuration and Extension
+#Configuration and Extension
 
 Sample Default Configuration
 By default there are two connectors defined in AMP module :
